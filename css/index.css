@@ -174,7 +174,7 @@ p {
   justify-content: center;
   justify-content: space-evenly;
 }
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .Header nav {
     flex-direction: column;
     align-items: center;
@@ -189,7 +189,7 @@ a {
 a:hover {
   color: lightsalmon;
 }
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   a:hover {
     text-decoration: none;
     border: 1px solid lightsalmon;
@@ -205,9 +205,14 @@ a:hover {
   border: 2px #193519 solid;
   width: 55%;
 }
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .TopSection img {
     display: none;
+  }
+}
+@media (max-width: 700px) {
+  .TopSection img {
+    width: 40%;
   }
 }
 .RightSide {
@@ -223,10 +228,21 @@ a:hover {
 }
 .RightSide h2 {
   text-align: center;
+  padding: 2%;
 }
-.RightSide p {
+.RightSide .quote {
   text-align: center;
   font-size: 2rem;
+}
+@media (max-width: 300px) {
+  .RightSide .quote {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .RightSide .quote {
+    font-size: 1.5rem;
+  }
 }
 .MiddleSection {
   background-color: #faf0e6;
@@ -236,6 +252,11 @@ a:hover {
 .MiddleSection h2 {
   text-align: center;
   padding: 2%;
+}
+@media (max-width: 300px) {
+  .MiddleSection h2 {
+    padding: 10%;
+  }
 }
 .BottomSection {
   background-color: #faf0e6;
@@ -248,6 +269,16 @@ a:hover {
   text-align: center;
   padding: 2%;
 }
+@media (max-width: 300px) {
+  .BottomSection h2 {
+    padding: 10%;
+  }
+}
+@media (max-width: 300px) {
+  .BottomSection h2 h3 {
+    padding: 10%;
+  }
+}
 .Contact {
   background-color: #faf0e6;
   margin: 0% 4%;
@@ -255,7 +286,7 @@ a:hover {
 }
 .Contact h2 {
   text-align: center;
-  margin-bottom: 1%;
+  padding: 2%;
 }
 .Contact p {
   text-align: center;
